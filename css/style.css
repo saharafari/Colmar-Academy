@@ -5,18 +5,22 @@ html {
 }
 
 @font-face {
-  font-family: 'Shrikhand', cursive;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Montserrat Subrayada', sans-serif;
 }
 body {
   margin: 0;
-  font-family: Georgia;
+  font-family: "Nunito", sans-serif;
   width: 100%;
 }
 /* HEADER */
 
 #head {
   height: 64px;
-  background-color: rgb(3, 43, 83);
+
+  background: linear-gradient(to right, rgb(0, 102, 102), rgb(128, 223, 255));
   color: white;
   font-family: Helvetica;
 }
@@ -31,24 +35,35 @@ header {
   margin-left: 24px;
   float: left;
   align-items: center;
-  padding-top: 9px;
+  margin-top: 8px;
+  padding: 4px 9px 4px 0px;
+  background-color: rgba(128, 223, 255, 0.08);
+  color: black;
+  border-radius: 6px;
+
 }
 
 .lion {
-  padding: 5px 7px 3.7px 7px;
-  background-color: white;
-  border-radius: 4px;
+  padding: 5px 4px 3.4px 7px;
+
+
 }
 .logo {
-  margin-left: 20px;
-  font-family: "Righteous";
-  line-height: 1.3;
-  font-size: 1.05rem;
+  margin-left: 10px;
+  font-family: "Orbitron";
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 1rem;
   text-align: center;
+}
+.logo span {
+  margin-left: 8px;
 }
 .navitems {
   float: right;
   padding-top: 24px;
+  font-family: "Nunito";
+  font-weight: 500;
 }
 nav ul {
   display: flex;
@@ -58,7 +73,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   margin-right: 16px;
-  color: #FFF;
+  color: #000;
 }
 
 /* HOMEPAGE MAIN CONTENT */
@@ -66,43 +81,49 @@ nav ul li a {
 #banner1 {
   display: flex;
   width: 100%;
-  background-color: rgb(240, 254, 240);
+  background-color: #FFF;
 }
-.image-container {
+#banner1 .image-container {
   width: 60%;
+  height: 540px;
   padding: 32px 40px 32px 24px;
 }
-.banner-image {
+#banner1 .banner-image {
   float: left;
   width: 100%;
   height: 100%;
 }
 .right-container {
-  font-family: Helvetica;
+  font-family: "Nunito", sans-serif;
   float: right;
-  margin-right: 20px;
+  margin-right: 0px;
   line-height: 1.6;
   display: block;
-  margin-top: 300px;
+  margin-top: 200px;
 
 }
 
 .right-container h1 {
   font-weight: bold;
   font-size: 2rem;
-  text-align: left;
+  text-align: center;
 }
 
 .right-container h3 {
-  text-align: left;
+  text-align: center;
+  margin-top: 1rem;
 }
 .start {
-  width: 300px;
-  background-color: darkgrey;
+  width: 280px;
+  background-color: rgb(153, 214, 255);
   text-align: center;
-  color: white;
-  margin-top: 1rem;
+  color: black;
+  font-weight: 700;
+  margin-top: 1.5rem;
   padding: 8px 0px;
+  border-radius: 4px;
+  margin-left: 100px;
+  border: 2.3px solid black;
 }
 
 /* BANNER 2 */
@@ -110,6 +131,7 @@ nav ul li a {
   display: inline-flex;
   width: 100%;
   flex-direction: row;
+  background-color: rgb(230, 240, 255);
 }
 
 #banner2 .left-section {
@@ -118,18 +140,38 @@ nav ul li a {
   width: 100%;
 }
 
-.left-section h1 {
-  margin-bottom: 24px;
-}
+
 .emanuel {
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
-  padding-left: 24px;
+  width: 57%;
+  padding-left: 29px;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+
+.emanuel h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: center;
+  margin-left: 216px;
+}
+
+.emanuel p {
+  margin-bottom: 20px;
+  font-family: "Open Sans";
+  font-style: italic;
+}
+
+.emanuel .speaker {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
 }
 #banner2 .image-container {
   width: 58.75%;
-  padding:32px 40px 32px 24px
+  padding:32px 40px 17px 24px
 }
 
 .banner2-image {
@@ -142,6 +184,8 @@ nav ul li a {
   flex-direction: column;
   position: absolute;
   margin-left: 67%;
+  background-color: rgba(204, 224, 255, 0.2);
+  margin-top: 1px;
 }
 
 .info {
@@ -149,13 +193,31 @@ display: flex;
 flex-direction: row;
 width: 423px;
 padding: 16px;
-border: 1px solid black;
+border-left: 1px solid white;
+border-bottom: 1px solid white;
 align-items: center;
 }
 
 .infoinfo {
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
+  line-height: 1.7;
+}
+
+.infoinfo h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.infoinfo p {
+  font-family: "Nunito", sans-serif;
+}
+
+.infoinfo a {
+  font-family: "Nunito", sans-serif;
+  color: rgb(51, 133, 255);
 }
 .infoimage {
   width: 35%;
@@ -177,10 +239,12 @@ align-items: center;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  background-color: rgb(153, 194, 255);
 }
 
 .banner3-title {
   font-weight: bold;
+  font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   margin: 32px;
   text-align: center;
@@ -191,8 +255,9 @@ align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
-  padding: 32px;
+  padding: 35px;
   justify-content: center;
+  margin-left: 20px;
 }
 
 .top-part-course img {
@@ -218,9 +283,20 @@ align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: blue;
+  background-color: white;
   margin-left: 32px;
   margin-bottom: 24px;
+  font-family: "Nunito", sans-serif;
+}
+
+.course .course-title {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 300;
+}
+
+.course .extra-info {
+  margin-top: 1rem;
 }
 
 /*BANNER 4*/
@@ -229,18 +305,23 @@ align-items: center;
     display: inline-flex;
     width: 100%;
     flex-direction: row;
-    padding-bottom: 32px;
+    padding-bottom: 80px;
+    background-color: rgb(77, 148, 255);
 }
 .banner4-title{
-  margin: 32px;
+  padding: 25px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
+  font-family: "Nunito", sans-serif;
+  color: #FFF;
+  background-color: rgb(77, 148, 255);
+  width: 100%;
 }
 
 .video-container {
   width: 60%;
-  padding: 32px 16px 24px 24px;
+  padding: 10px 16px 30px 24px;
 }
 #banner4 video {
   float: left;
@@ -248,15 +329,27 @@ align-items: center;
   height: 100%;
 }
 
+#banner4 h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+padding-left: 10px;
+}
 
+#banner4 p {
+  font-family: "Nunito", sans-serif;
+  padding: 10px;
+
+}
 .extras {
   display: flex;
   flex-direction: column;
   width: 423px;
   align-content: center;
   position: absolute;
-  margin-left: 67%;
+  margin-left: 65.5%;
   padding-top: 37.5px;
+  margin-top: 30px;
 }
 
 .extra {
@@ -264,6 +357,8 @@ align-items: center;
   flex-direction: row;
   width: 100%;
   height: 168px;
+  border: 3px solid white;
+  margin-top: 30px;
 }
 
 .extra img {
@@ -281,12 +376,14 @@ align-items: center;
 /* FOOTER */
 
 footer .wrapper {
-  border-top: 1px solid grey;
   display: inline-flex;
-  margin-top: 1px;
-  margin-left: 24px;
+  padding-left: 24px;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #000;
+  color: white;
+  font-family: "Nunito", sans-serif;
 }
 
 .terms-and-privacy {
@@ -298,6 +395,8 @@ ul {
 }
 ul li a {
   text-decoration: none;
-  color: black;
+
   margin-left: 15px;
+  color: white;
+  font-family: "Nunito", sans-serif;
 }
