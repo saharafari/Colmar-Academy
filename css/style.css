@@ -400,3 +400,38 @@ ul li a {
   color: white;
   font-family: "Nunito", sans-serif;
 }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 500px) {
+  #banner1 .image-container {
+    height: 180px;
+    width: 100%;
+  }
+  #banner1 .right-container {
+    width: 100%;
+  }
+  #banner1 h1 {
+    padding: 32px 16px;
+  }
+
+  .start {
+    margin-bottom: 32px;
+  }
+
+  .information {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+
+  .infoimage {
+    padding: 16px;
+  }
+
+  .infoinfo {
+    padding-left: 16px;
+  }
+
+
+}
